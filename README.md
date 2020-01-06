@@ -46,7 +46,8 @@ The *garden* model will include:
 1.	Create initial files and install initial dependencies
 2.	Create and style initial pages
 3.	Create db and models
-4.	Begin coding routes, controllers, etc.
+4.	Scrape website
+5.	Begin coding routes, controllers, etc.
 
 
 

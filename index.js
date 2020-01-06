@@ -16,6 +16,10 @@ app.get('/', (req, res) => {
 	res.render('home')
   })
 
+  app.get('/profile', (req, res) => {
+	res.render('profile/index')
+  })
+
 // Listen on a port
 
 app.listen(3000, () => {
