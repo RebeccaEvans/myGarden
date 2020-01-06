@@ -30,16 +30,32 @@ The *plant* model will include:
 -plant culture needs
 -plant uses
 
-I will plan on scraping the Great Plant Picks website for an initial list of plants to population the database, but users will be able to add a plant if they'd like.
+I plan on scraping the Great Plant Picks website for an initial list of plants to population the database, but users will be able to add a plant if they'd like.
 
 The *garden* model will include:
 
 -garden name
 -garden location
--garden aspect (south facing, shady, wet, dry, etc.)
+-garden aspect (south facing, shady, wet, dry, etc.)	
 -list of plants including a field with the number of plants
 
 ***
 
+## Plan of Action
 
+1.	Create initial files and install initial dependencies
+2.	Create and style initial pages
+3.	Create db and models
+4.	Begin coding routes, controllers, etc.
+
+
+
+Color Scheme:
+
+Blue: #22265d
+rich blue: #1f3943
+Green: 2f4e24
+light blue: #5c7971
+pink: #702659
+very light pink: #d9c3c6
 
