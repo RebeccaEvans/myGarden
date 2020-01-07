@@ -17,9 +17,7 @@ The *user* model will include the following fields:
 -first name
 -last name
 -email address
--usda climate zone
--favorite plant list
--garden name
+-city, state
 
 The *plant* model will include:
 
@@ -36,7 +34,10 @@ The *garden* model will include:
 
 -garden name
 -garden location
--garden aspect (south facing, shady, wet, dry, etc.)	
+-garden aspect (south facing, shady, wet, dry, etc.)
+-garden exposure (sunny, shady)
+-garden soiltype
+-gardent moisture	
 -list of plants including a field with the number of plants
 
 ***

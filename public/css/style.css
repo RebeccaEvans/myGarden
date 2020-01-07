@@ -14,12 +14,14 @@ body {
 	grid-row: 1 / 2;
 	background-image: url("/images/banner.png");
 	border: solid 2px white;
+	display:flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
 }
 
-#nav div {
 
-	align-items: center;
-	display: inline-flex;
+#nav div {
 	text-decoration: none;
 	margin: 20px;
 	border-radius: 10px;
@@ -31,6 +33,7 @@ body {
 	width: 200px;
 	height: 27px;
 }
+
 a {
 	text-decoration: none;
 }
