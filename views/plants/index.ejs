@@ -1,0 +1,44 @@
+<div class="allPlants">
+	<div class="plantTable">
+		<table class="searchable sortable" id = "plantTable">
+			<caption>PLANT LIST</caption>
+			<thead>
+			<tr>
+				<th class="latin">Latin Name</th>
+				<th class="common">Common Name</th>
+				<th class="type">Plant Type</th>
+				<th class="exposure">Exposure</th>
+			</tr>
+			</thead>
+			<tbody>
+				<% plants.forEach(function(plant) { %>
+					<tr>
+						<td><a href="/plants/<%= plant.id %>"><%= plant.latinName%></a></td>
+						<td><%= plant.commonName %></td>
+						<td><%= plant.plantType %></td>
+						<td><%= plant.exposure %></td>
+					</tr>
+
+				<% }) %>
+				<tr>
+					<td>Tulip</td>
+					<td>Tulip</td>
+					<td>bulb</td>
+					<td>full sun</td>
+				</tr>
+				<tr>
+					<td>Tulip</td>
+					<td>Tulip</td>
+					<td>bulb</td>
+					<td>full sun</td>
+				</tr>
+				<tr>
+					<td>Tulip</td>
+					<td>Tulip</td>
+					<td>bulb</td>
+					<td>full sun</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>

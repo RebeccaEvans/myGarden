@@ -1,5 +1,6 @@
 const express = require('express')
 const layouts = require('express-ejs-layouts')
+var db = require('./models')
 
 // Initialize dependencies
 const app = express()
@@ -14,11 +15,43 @@ app.use(express.static(__dirname + '/public'))
 
 app.get('/', (req, res) => {
 	res.render('home')
+})
+
+app.get('/profile', (req, res) => {
+	res.render('profile/index')
+})
+
+app.get('/gardens', (req, res) => {
+	res.render('gardens/index')
+})
+
+app.get('/newGarden', (req, res) => {
+	res.render('gardens/newGarden')
+})
+
+//list all plants
+app.get('/plants', (req, res) => {
+	db.plant.findAll()
+	.then(plants => {
+		res.render('plants/index', {plants})
+	})
+})
+
+app.get('/plants/:id', function(req, res) {
+	db.plant.findOne({
+	  where: {id: req.params.id}
+	}).then(function(plant) {
+	  res.render('plants/show', {plant: plant})
+	}).catch(function(error) {
+	  console.log(error)
+	  res.status(400).render('main/404')
+	})
   })
 
-  app.get('/profile', (req, res) => {
-	res.render('profile/index')
-  })
+// show single plant
+
+
+
 
 // Listen on a port
 

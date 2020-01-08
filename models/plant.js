@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
     seasonalInt: DataTypes.STRING
   }, {});
   plant.associate = function(models) {
-    plant.belongsToMany(garden, {through: 'gardens_plants'})
+    models.plant.belongsToMany(models.garden, {through: 'gardens_plants'})
   };
   return plant;
 };

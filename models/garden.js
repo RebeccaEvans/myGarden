@@ -10,7 +10,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   garden.associate = function(models) {
     models.garden.belongsTo(models.user)
-    garden.belongsToMany(plant, {through: 'gardens_plants'})
+    models.garden.belongsToMany(models.plant, {through: 'gardens_plants'})
   };
   return garden;
 };

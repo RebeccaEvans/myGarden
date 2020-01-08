@@ -13,7 +13,6 @@ body {
 	grid-column: 1 / 5;
 	grid-row: 1 / 2;
 	background-image: url("/images/banner.png");
-	border: solid 2px white;
 	display:flex;
 	flex-direction: row;
 	align-items: center;
@@ -80,4 +79,21 @@ button {
 	background-color: rgba(47, 79, 36);
 	border: solid 4px  #5c7971;
 	border-radius: 5px;
+}
+
+.userProfile {
+	display: grid;
+	grid-template-columns: 1fr 1fr 3fr;
+	grid-template-rows: 100px 400px;
+	margin: 20px 0 0 0;
+	padding: 20px;
+	text-align: center;
+	background-color: rgba(47, 79, 36);
+	border: solid 4px  #5c7971;
+	border-radius: 5px;
+}
+
+#userImage img {
+	max-height: 250%;
+	max-width: 250%;
 }
