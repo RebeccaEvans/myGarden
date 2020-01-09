@@ -97,3 +97,72 @@ button {
 	max-height: 250%;
 	max-width: 250%;
 }
+
+.singlePlant  {
+	display: grid;
+	grid-template-columns: 1.5fr 2fr 1fr;
+	grid-template-rows: 450px;
+	margin: 20px 0 0 0;
+	background-color: rgba(47, 79, 36);
+	border: solid 4px  #5c7971;
+	border-radius: 5px;
+}
+
+#plantImage, #plantInfo, #addButton {
+	padding: 10px;
+	height: 100%;
+}
+
+#addButton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.singlePlant img {
+	max-height: 90%;
+	max-width: 90%;
+}
+
+.allPlants {
+	margin: 20px 0 0 0;
+	padding: 20px;
+	background-color: rgba(47, 79, 36);
+	border: solid 4px  #5c7971;
+	border-radius: 5px;
+	display: flex;
+	justify-content: center;
+}
+
+#plantInfo a {
+	text-decoration: underline;
+}
+
+
+table {
+	border: 1px solid #5c7971;
+	font-size: 14px;
+	font-family: 'Muli', sans-serif;
+	width: 100%;
+
+}
+
+table caption {
+	font-size: 30px;
+}
+
+th, td {
+	padding: 5px;
+	text-align: left;
+	border-bottom: 1px solid #5c7971;
+}
+
+td a  {
+	text-decoration: underline;
+}
+
+th {
+	font-weight: 700;
+	font-size: 20px;
+}
+

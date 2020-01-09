@@ -4,40 +4,20 @@
 			<caption>PLANT LIST</caption>
 			<thead>
 			<tr>
-				<th class="latin">Latin Name</th>
-				<th class="common">Common Name</th>
-				<th class="type">Plant Type</th>
-				<th class="exposure">Exposure</th>
+				<th class="latin">LATIN NAME</th>
+				<th class="common">COMMON NAME</th>
+				<th class="type">PLANT TYPE</th>
 			</tr>
 			</thead>
 			<tbody>
 				<% plants.forEach(function(plant) { %>
 					<tr>
 						<td><a href="/plants/<%= plant.id %>"><%= plant.latinName%></a></td>
-						<td><%= plant.commonName %></td>
+						<td> <%= plant.commonName ? plant.commonName.toUpperCase() : 'NONE LISTED' %></td>
 						<td><%= plant.plantType %></td>
-						<td><%= plant.exposure %></td>
 					</tr>
 
 				<% }) %>
-				<tr>
-					<td>Tulip</td>
-					<td>Tulip</td>
-					<td>bulb</td>
-					<td>full sun</td>
-				</tr>
-				<tr>
-					<td>Tulip</td>
-					<td>Tulip</td>
-					<td>bulb</td>
-					<td>full sun</td>
-				</tr>
-				<tr>
-					<td>Tulip</td>
-					<td>Tulip</td>
-					<td>bulb</td>
-					<td>full sun</td>
-				</tr>
 			</tbody>
 		</table>
 	</div>
