@@ -5,16 +5,7 @@
     "dialect": "postgres",
     "operatorsAliases": "false"
   },
-  "test": {
-    "database": "myGarden",
-    "host": "127.0.0.1",
-    "dialect": "postgres",
-    "operatorsAliases": "false"
-  },
   "production": {
-    "database": "myGarden",
-    "host": "127.0.0.1",
-    "dialect": "postgres",
-    "operatorsAliases": "false"
+    "use_env_variable": "DATABASE_URL"
   }
 }
