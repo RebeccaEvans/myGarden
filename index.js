@@ -18,7 +18,11 @@ app.get('/', (req, res) => {
 })
 
 app.get('/profile', (req, res) => {
-	res.render('profile/index')
+	res.render('users/index')
+})
+
+app.get('/newuser', (req,res) =>{
+	res.render('users/newuser')
 })
 
 app.get('/gardens', (req, res) => {

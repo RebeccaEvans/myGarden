@@ -1,0 +1,30 @@
+<div class="newUser">
+  <div id="userTitle">
+    <h1>Sign up for myGarden</h1>
+  </div>
+  <div id="userForm">
+    <form action="/users/signup" method="POST" class ="userForm">
+      <div class="formWrapper">
+        <div class="userInput">
+          <label for="firstName">First Name:</label>
+          <input type="text" class="formInput" id="firstName" name="firstName" value="<%= data.firstname %>" required>
+        </div>
+        <div class="userInput">
+          <label for="lastName">Last Name:</label>
+          <input type="text" class="formInput" id="lastName" name="lastName" value="<%= data.lastname %>" required>
+        </div>
+        <div class="userInput">
+          <label for="email">Email Address:</label>
+          <input type="text" class="formInput" id="email" name="email" value="<%= data.email%>" required>
+        </div>
+        <div class="userInput">
+          <label for="location">My Location:</label>
+          <input type="text" class="formInput" id="location" name="location" value="<%= data.location %>" required></input>
+        </div>
+        <div class="submitBtn">
+          <input type="submit" class="addNewUser">
+        </div>
+    </div>
+    </form>
+  </div>
+</div>
